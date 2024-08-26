@@ -3,16 +3,39 @@ import styled from 'styled-components';
 import ITCJ_LOGO from '/public/ITCJ_LOGO.png';
 import NACIONAL_LOGO from '/public/NACIONAL_LOGO.png';
 import TECNM_LOGO from '/public/TECNM_LOGO.png';
+import { useNavigate } from 'react-router-dom';
 
 /**
  * Primary UI component for user interaction
  */
 export default function LogosBar() {
+  const navigate = useNavigate();
   return (
     <StyledContainer>
-      <img src={TECNM_LOGO} alt='TECNM_LOGO' className='TECNM_LOGO' />
-      <img src={ITCJ_LOGO} alt='ITCJ_LOGO' className='ITCJ_LOGO' />
-      <img src={NACIONAL_LOGO} alt='NACIONAL_LOGO' className='NACIONAL_LOGO' />
+      <img
+        src={TECNM_LOGO}
+        alt='TECNM_LOGO'
+        className='TECNM_LOGO'
+        onClick={() => {
+          window.location.href = 'https://www.tecnm.mx';
+        }}
+      />
+      <img
+        src={ITCJ_LOGO}
+        alt='ITCJ_LOGO'
+        className='ITCJ_LOGO'
+        onClick={() => {
+          window.location.href = 'http://cdjuarez.tecnm.mx';
+        }}
+      />
+      <img
+        src={NACIONAL_LOGO}
+        alt='NACIONAL_LOGO'
+        className='NACIONAL_LOGO'
+        onClick={() => {
+          navigate('/');
+        }}
+      />
       <StyledDivider />
       <StyledDivider />
     </StyledContainer>

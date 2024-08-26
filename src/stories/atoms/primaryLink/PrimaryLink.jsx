@@ -1,13 +1,17 @@
 import PropTypes from 'prop-types';
-import { FaHotel } from 'react-icons/fa';
 import styled from 'styled-components';
 
 /**
  * Primary UI component for user interaction
  */
-export default function PrimaryLink({ icon, text }) {
+export default function PrimaryLink({ icon, text, href }) {
+  const navigate = useNavigate();
   return (
-    <StyledContainer>
+    <StyledContainer
+      onClick={() => {
+        navigate(href);
+      }}
+    >
       <StyledIconContainer>{icon}</StyledIconContainer>
       <Title>{text}</Title>
     </StyledContainer>
@@ -15,9 +19,10 @@ export default function PrimaryLink({ icon, text }) {
 }
 
 const StyledContainer = styled.div`
+  text-decoration: none;
   display: flex;
-  width: 156px;
-  height: 156px;
+  width: 140px;
+  height: 140px;
   padding: 16px;
   flex-direction: column;
   justify-content: center;
@@ -56,9 +61,14 @@ const Title = styled.div`
 PrimaryLink.propTypes = {
   icon: PropTypes.element,
   text: PropTypes.string,
+  href: PropTypes.string,
 };
 
+import { FaLaptopCode } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
+
 PrimaryLink.defaultProps = {
-  icon: <FaHotel />,
-  text: 'Hoteles',
+  icon: <FaLaptopCode />,
+  text: 'TBD',
+  href: '',
 };

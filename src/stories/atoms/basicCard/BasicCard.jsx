@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { TextBody1, TextH4 } from '../../tokens/Text';
+import { TextBody1, TextH6 } from '../../tokens/Text';
 
-export default function BasicCard({ title, text }) {
+export default function BasicCard({ title, text, onClick }) {
   return (
-    <StyledContainer htmlFor='input'>
+    <StyledContainer htmlFor='input' onClick={onClick}>
       <StyledImgContainer className='img'>
         <StyledImg src='https://picsum.photos/300/200' />
       </StyledImgContainer>
       <StyledDescriptionContainer>
-        <TextH4>{title}</TextH4>
+        <TextH6>{title}</TextH6>
         <TextBody1>{text}</TextBody1>
       </StyledDescriptionContainer>
     </StyledContainer>
@@ -18,7 +18,7 @@ export default function BasicCard({ title, text }) {
 
 const StyledContainer = styled.label`
   display: grid;
-  width: 328px;
+  width: 100%;
   height: 136px;
   align-items: flex-start;
   gap: 16px;
@@ -54,19 +54,28 @@ const StyledImg = styled.img`
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
+  overflow: hidden;
 `;
 
 const StyledDescriptionContainer = styled.div`
   height: 90%;
   width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 5fr;
+  overflow: hidden;
 `;
 
 BasicCard.propTypes = {
   title: PropTypes.string,
   text: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 BasicCard.defaultProps = {
   title: 'Titulo',
   text: 'Este es un texto de desripcion que es bastante largo',
+  onClick: () => {
+    console.log('Clicked');
+  },
 };
