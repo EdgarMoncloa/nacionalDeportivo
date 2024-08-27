@@ -13,15 +13,15 @@ export const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: '/',
+        path: '/nacionalDeportivo/',
         element: <Root />,
       },
       {
-        path: '/Hoteles',
+        path: '/nacionalDeportivo/Hoteles',
         element: <HotelsPage />,
       },
       {
-        path: '/Restaurantes',
+        path: '/nacionalDeportivo/Restaurantes',
         element: <RestaurantsPage />,
       },
     ],
@@ -31,11 +31,11 @@ export const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: '/Hotel/:id',
+        path: '/nacionalDeportivo/Hotel/:id',
         element: <HotelPage />,
       },
       {
-        path: '/Restaurant/:id',
+        path: '/nacionalDeportivo/Restaurant/:id',
         element: <RestaurantPage />,
       },
     ],
