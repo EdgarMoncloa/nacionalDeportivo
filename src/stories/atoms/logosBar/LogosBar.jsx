@@ -33,7 +33,7 @@ export default function LogosBar() {
         alt='NACIONAL_LOGO'
         className='NACIONAL_LOGO'
         onClick={() => {
-          navigate('/');
+          navigate('/nacionalDeportivo');
         }}
       />
       <StyledDivider />

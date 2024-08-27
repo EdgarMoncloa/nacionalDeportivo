@@ -15,7 +15,7 @@ export default function HotelsPage() {
           title={hotel.name}
           text={hotel.description}
           onClick={() => {
-            navigate(`/Hotel/${hotel.id}`);
+            navigate(`/nacionalDeportivo/Hotel/${hotel.id}`);
           }}
         />
       ))}

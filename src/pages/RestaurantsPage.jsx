@@ -14,7 +14,7 @@ export default function RestaurantsPage() {
           title={restaurant.name}
           text={restaurant.description}
           onClick={() => {
-            navigate(`/Restaurant/${restaurant.id}`);
+            navigate(`/nacionalDeportivo/Restaurant/${restaurant.id}`);
           }}
         />
       ))}

@@ -7,9 +7,13 @@ import { IoRestaurant } from 'react-icons/io5';
 export function Root() {
   return (
     <StyledMenuContainer>
-      <PrimaryLink href={'/Hoteles'} icon={<FaHotel />} text='Hoteles' />
       <PrimaryLink
-        href={'/Restaurantes'}
+        href={'/nacionalDeportivo/Hoteles'}
+        icon={<FaHotel />}
+        text='Hoteles'
+      />
+      <PrimaryLink
+        href={'/nacionalDeportivo/Restaurantes'}
         icon={<IoRestaurant />}
         text='Restaurantes'
       />
