@@ -4,6 +4,8 @@ import { Root } from '../pages/Root';
 import HotelsPage from '../pages/HotelsPage';
 import { Layout } from '../pages/Layout';
 import HotelPage from '../pages/HotelPage';
+import RestaurantsPage from '../pages/RestaurantsPage';
+import RestaurantPage from '../pages/RestaurantPage';
 
 export const router = createBrowserRouter([
   {
@@ -18,6 +20,10 @@ export const router = createBrowserRouter([
         path: '/Hoteles',
         element: <HotelsPage />,
       },
+      {
+        path: '/Restaurantes',
+        element: <RestaurantsPage />,
+      },
     ],
   },
   {
@@ -27,6 +33,10 @@ export const router = createBrowserRouter([
       {
         path: '/Hotel/:id',
         element: <HotelPage />,
+      },
+      {
+        path: '/Restaurant/:id',
+        element: <RestaurantPage />,
       },
     ],
   },

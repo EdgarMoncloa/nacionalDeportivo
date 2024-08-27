@@ -38,7 +38,7 @@ const StyledBackground = styled.img`
   /* height: 100%; */
   /* width: 100%; */
   position: absolute;
-  z-index: -10;
+  z-index: 0;
   top: 0;
   left: 50%;
   transform: translateX(-50%);

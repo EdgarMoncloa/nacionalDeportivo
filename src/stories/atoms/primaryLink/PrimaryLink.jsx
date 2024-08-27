@@ -54,7 +54,7 @@ const StyledIconContainer = styled.div`
 `;
 
 const Title = styled.div`
-  font-size: 2em;
+  font-size: 1.8rem;
   color: var(--colors-app-main-700, #c11627);
 `;
 
