@@ -17,6 +17,7 @@ export default function HotelsPage() {
           onClick={() => {
             navigate(`/nacionalDeportivo/Hotel/${hotel.id}`);
           }}
+          img={hotel.mainImg}
         />
       ))}
     </StyledHotelsContainer>

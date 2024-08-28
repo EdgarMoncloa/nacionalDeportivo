@@ -2,11 +2,11 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { TextBody1, TextH6 } from '../../tokens/Text';
 
-export default function BasicCard({ title, text, onClick }) {
+export default function BasicCard({ title, text, onClick, img }) {
   return (
     <StyledContainer htmlFor='input' onClick={onClick}>
       <StyledImgContainer className='img'>
-        <StyledImg src='https://picsum.photos/300/200' />
+        <StyledImg src={img} />
       </StyledImgContainer>
       <StyledDescriptionContainer>
         <TextH6>{title}</TextH6>
@@ -53,6 +53,7 @@ const StyledImg = styled.img`
   flex-shrink: 0;
   min-width: 100%;
   min-height: 100%;
+  height: 100%;
   object-fit: cover;
   overflow: hidden;
 `;
@@ -70,6 +71,7 @@ BasicCard.propTypes = {
   title: PropTypes.string,
   text: PropTypes.string,
   onClick: PropTypes.func,
+  img: PropTypes.string,
 };
 
 BasicCard.defaultProps = {
@@ -78,4 +80,5 @@ BasicCard.defaultProps = {
   onClick: () => {
     console.log('Clicked');
   },
+  img: 'https://picsum.photos/300/200',
 };
