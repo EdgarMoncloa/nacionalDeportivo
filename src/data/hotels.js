@@ -2,6 +2,8 @@ const hotels = [
   {
     id: 1,
     name: 'Hotel Four Points By Sheraton',
+    description:
+      'Cuentos desde $2,730 hasta $5,565. Gimnasio 24 h, restaurante bar interno, terraza, bar con alberca, ubicado en plaza comercial.',
     mainImg:
       'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1f/54/2b/9e/four-points-by-sheraton.jpg?w=700&h=-1&s=1',
     rates: [
@@ -97,9 +99,10 @@ const hotels = [
   {
     id: 2,
     name: 'Hotel Four Points By Sheraton',
+    description:
+      'Cuentos desde $2,730 hasta $5,565. Gimnasio 24 h, restaurante bar interno, terraza, bar con alberca, ubicado en plaza comercial.',
     mainImg:
       'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1f/54/2b/9e/four-points-by-sheraton.jpg?w=700&h=-1&s=1',
-    // description:
     rates: [
       {
         title:
@@ -184,17 +187,19 @@ const hotels = [
       },
     ],
     imgs: [
-      'https://images.trvl-media.com/lodging/68000000/67400000/67396300/67396297/302d0105.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium',
+      'https://cf.bstatic.com/xdata/images/hotel/max1024x768/463617948.jpg?k=42febf5ef0ea7adcef0a885d40dbdf90d10122ed80c300d77cf8dafad5a678fe&o=&hp=1',
       'https://images.trvl-media.com/lodging/68000000/67400000/67396300/67396297/302d0105.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium',
       'https://cf.bstatic.com/xdata/images/hotel/max1024x768/463618048.jpg?k=238e37bfd6ef609afaa5d7ea53cc4b24ab227053174c3ae7874bcc33e71949d3&o=&hp=1',
     ],
+    link: 'https://www.marriott.com/en-us/hotels/cjsfp-four-points-ciudad-juarez/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0',
   },
   {
     id: 3,
     name: 'Hotel Four Points By Sheraton',
+    description:
+      'Cuentos desde $2,730 hasta $5,565. Gimnasio 24 h, restaurante bar interno, terraza, bar con alberca, ubicado en plaza comercial.',
     mainImg:
       'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1f/54/2b/9e/four-points-by-sheraton.jpg?w=700&h=-1&s=1',
-    // description:
     rates: [
       {
         title:
@@ -279,10 +284,11 @@ const hotels = [
       },
     ],
     imgs: [
-      'https://images.trvl-media.com/lodging/68000000/67400000/67396300/67396297/302d0105.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium',
+      'https://cf.bstatic.com/xdata/images/hotel/max1024x768/463617948.jpg?k=42febf5ef0ea7adcef0a885d40dbdf90d10122ed80c300d77cf8dafad5a678fe&o=&hp=1',
       'https://images.trvl-media.com/lodging/68000000/67400000/67396300/67396297/302d0105.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium',
       'https://cf.bstatic.com/xdata/images/hotel/max1024x768/463618048.jpg?k=238e37bfd6ef609afaa5d7ea53cc4b24ab227053174c3ae7874bcc33e71949d3&o=&hp=1',
     ],
+    link: 'https://www.marriott.com/en-us/hotels/cjsfp-four-points-ciudad-juarez/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0',
   },
 ];
 
