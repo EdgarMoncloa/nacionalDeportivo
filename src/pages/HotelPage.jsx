@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import hotels from '../data/hotels';
 import styled from 'styled-components';
 import { TextBody1, TextH2, TextH3, TextH4 } from '../stories/tokens/Text';
@@ -10,7 +10,6 @@ import BasicButton from '../stories/atoms/basicButton/BasicButton';
 export default function HotelPage() {
   const { id } = useParams();
   const hotel = hotels.find((item) => `${item.id}` === id);
-  const navigate = useNavigate();
 
   if (!hotel) {
     return (
@@ -41,7 +40,7 @@ export default function HotelPage() {
               key={idx}
             />
           ))}
-          <ImagesList title={'Imagenes del hotel'} items={hotel.imgs} />
+          <ImagesList title={'Imágenes del hotel'} items={hotel.imgs} />
           <br />
           <StyledIFrame
             src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.195110610923!2d-106.43722488810587!3d31.737874936254666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75b4ce5e039af%3A0x7cc6156426e14551!2sFour%20Points%20by%20Sheraton%20Ciudad%20Juarez!5e0!3m2!1ses-419!2smx!4v1724804407844!5m2!1ses-419!2smx'
@@ -55,7 +54,7 @@ export default function HotelPage() {
           <BasicButton
             text='Ir al sitio del hotel.'
             action={() => {
-              navigate(hotel.link);
+              location.href = hotel.link;
             }}
           />
         </StyledBlogContainer>

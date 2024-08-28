@@ -43,7 +43,7 @@ ImagesList.propTypes = {
 };
 
 ImagesList.defaultProps = {
-  title: 'Imagenes',
+  title: 'Imágenes',
   items: [
     'https://images.trvl-media.com/lodging/68000000/67400000/67396300/67396297/302d0105.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium',
     'https://images.trvl-media.com/lodging/68000000/67400000/67396300/67396297/302d0105.jpg?impolicy=fcrop&w=1200&h=800&p=1&q=medium',
