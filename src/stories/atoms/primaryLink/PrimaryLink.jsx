@@ -21,7 +21,7 @@ export default function PrimaryLink({ icon, text, href }) {
 const StyledContainer = styled.div`
   text-decoration: none;
   display: flex;
-  width: 140px;
+  width: 75%;
   height: 140px;
   padding: 16px;
   flex-direction: column;
@@ -54,7 +54,7 @@ const StyledIconContainer = styled.div`
 `;
 
 const Title = styled.div`
-  font-size: 1.8rem;
+  font-size: 1.75rem;
   color: var(--colors-app-main-700, #c11627);
 `;
 
